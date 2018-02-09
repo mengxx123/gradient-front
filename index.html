@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery CSS3颜色渐变选择器</title>
+
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<link type="text/css" rel="stylesheet" href="colorpicker/css/colorpicker.css" />
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="colorpicker/js/colorpicker.js"></script>
+<script type="text/javascript" src="js/dom-drag.js"></script>
+<script type="text/javascript" src="js/gradX.js"></script>
+
+</head>
+<body>
+
+<div id="gradX" ></div>
+
+<div class="result"> Result [Target elements]</div>
+
+<div class="targets">
+	<div class="target" id="target">
+		<div class="target_text">Target #1</div>
+	</div>
+	<div class="target" id="target2">
+		<div class="target_text">Target #2</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+gradX("#gradX", {
+	targets: [".target"]
+});
+</script>
+
+</body>
+</html>
+
